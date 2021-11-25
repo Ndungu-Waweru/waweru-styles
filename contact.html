@@ -10,71 +10,89 @@ License:MIT
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet"type="text/css"href="main.css">
+    <title>contact</title>
   </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <body>
     <!-------Navigation Bar------>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-      <a href="">Resume</a>
+    <nav class="nav-menu">
+      <div>
+      <a href="index.html"><i class="fas fa-home"></i>Home</a>
+      <a href="projects.html"><i class="fas fa-project-diagram"></i>Projects</a>
+      <a href="services.html"><i class="fab fa-servicestack"></i>Services</a>
+      <a href="about.html"><i class="fas fa-address-card"></i>About</a>
+      <a href="blog.html"><i class="fas fa-blog"></i>Blog</a>
+      <a href="contact.html"><i class="fas fa-id-card-alt"></i>Contact</a>
+    </div>
     </nav>
     <!------Hero Section-->
     <header>
-      <h1><i>Drop me a line</i>></h1>
+      <h1><i>Drop me a line</i></h1>
       <p>
         <i>
           Book an appointment,Tell me about your project and consult on my
-          services by filling the form below</i
-        >
+          services by filling the form below</i>
       </p>
     </header>
     <!--------Main Page Content-->
-    <main>
+    <main class="container">
       <h2>send a message</h2>
       <form form action="">
         <div>
-          <label for="">Your Name</label>
-          <input type="text" id="name" />
+          <label for=""> Name</label>
+          <input type="text" placeholder="Your Name" class="styles">
         </div>
+
         <div>
           <label for="">Email</label>
-          <input type="Email" name="email" id="email" />
+          <input type="text" placeholder="Your Email" class="styles">
         </div>
+
         <div>
-          <label for="subject">Subject</label>
-          <input type="text" name="Subject" id="subject" />
+          <label for="">Tel</label>
+          <input type="text" placeholder="+254" class="styles">
         </div>
+
+        <div>
+          <label for="">Your Phone</label>
+          <input type="text"placeholder="07*******" class="styles">
+        </div>
+
+        <div>
+          <label for="">Subject</label>
+          <input type="text" placeholder="subject" class="styles">
+        </div>
+
         <div>
           <label for="product">Product</label>
-          <select name="product" id="product">
+          <select name="product" id="product" class="styles">
             <option value="web">Web Application</option>
             <option value="desktop">Desktop Application</option>
             <option value="mobile">Mobile Application</option>
             <option value="other">Other</option>
           </select>
+
         </div>
         <div>
           <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <textarea name="message" class="styles" cols="30" rows="10"></textarea>
         </div>
-      </form> 
+        <input type="submit" value="send">
+        </form>
     </main>
     <!-------Footer Section-->
     <footer>
         <footer>
-            <ul>
-              <li><a href="">Github</a></li>
-              <li><a href="">LinkedIn</a></li>
-              <li><a href="">Twitter</a></li>
-              <li><a href="mailto:">Email</a></li>
-              <li><a href="">Instagram</a></li>
+            <ul class="links">
+              <li><a href="https://github.com/NdunguWaweru99"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/daniel-waweru-94246b212/"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://twitter.com/WaweruDaniel99"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/_just.w.a.w.e.r.u/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="mailto:danwanjiku498@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
             </ul>
-            <p><i>&copy2021;All Rights Reserved.&Trade</i> ;<a href=""><i>Daniel Waweru</i>></a></p>
+            <p><i>&copy2021;All Rights Reserved.&Trade</i> ;<a href=""><i>Daniel Waweru</i></a></p>
     </footer>
   </body>
 </html>
